@@ -259,3 +259,15 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text-soft);
   font-size: 1rem;
 }
+
+
+.package-intro{
+  margin: 0 0 14px;
+  color: #d9e3f7;
+}
+
+.package-note{
+  margin-top: 14px;
+  color: #9fb6e6;
+  font-size: 0.98rem;
+}
