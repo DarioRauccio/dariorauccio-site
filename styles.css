@@ -252,3 +252,10 @@ img { max-width: 100%; height: auto; display: block; }
   .btn { width: 100%; }
   .hero-ctas { flex-direction: column; }
 }
+
+
+.hero-soft-note {
+  margin-top: 1rem;
+  color: var(--text-soft);
+  font-size: 1rem;
+}
