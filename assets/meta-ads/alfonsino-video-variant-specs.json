@@ -1,0 +1,50 @@
+{
+  "campaign": "Alfonsino Offerte d'estate",
+  "objective": "Awareness / notorieta con invito ad aprire l'app e scoprire i ristoranti in promozione",
+  "placements": ["Facebook Feed", "Instagram Feed", "Instagram Stories", "Instagram Reels", "Facebook Reels"],
+  "formats": ["9:16", "4:5", "1:1"],
+  "titles": [
+    "Offerte d'estate su Alfonsino",
+    "Scopri i ristoranti in promo",
+    "I tuoi piatti preferiti ti aspettano",
+    "Apri l'app e trova la tua promo",
+    "Estate più buona con Alfonsino"
+  ],
+  "descriptions": [
+    "Entra nell'app e scopri le offerte attive sui ristoranti disponibili nella tua zona.",
+    "Hai voglia di qualcosa di buono? Apri Alfonsino e guarda i locali in promozione.",
+    "Dai burger alle bowl: trova nuove promo e scegli il piatto giusto per la tua estate.",
+    "Le offerte cambiano: accedi all'app e controlla quali ristoranti puoi provare oggi.",
+    "Piatti preferiti, atmosfera estiva e promo da scoprire direttamente su Alfonsino."
+  ],
+  "variants": [
+    {
+      "id": "V1",
+      "name": "Food carousel",
+      "duration_seconds": 8,
+      "cta": "Scoprile nell'app",
+      "motion": ["logo in first frame", "food rows slide horizontally", "CTA pulse on final 2 seconds"]
+    },
+    {
+      "id": "V2",
+      "name": "Promo badge",
+      "duration_seconds": 7,
+      "cta": "Apri l'app",
+      "motion": ["promo badge pulse", "central dish micro-zoom", "CTA pulse"]
+    },
+    {
+      "id": "V3",
+      "name": "Local discovery",
+      "duration_seconds": 8,
+      "cta": "Guarda sull'app",
+      "motion": ["local map dots ping", "delivery bag route", "CTA final frame"]
+    },
+    {
+      "id": "V4",
+      "name": "Snackable reminder",
+      "duration_seconds": 6,
+      "cta": "Entra e scopri",
+      "motion": ["food chips pop in sequence", "short brand reminder", "CTA pulse"]
+    }
+  ]
+}
