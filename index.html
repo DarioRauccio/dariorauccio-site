@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AG / V1 — Diagnóstico de crecimiento para negocios locales</title>
-  <meta name="description" content="Detectamos fricciones de web, redes y conversión y las convertimos en un plan de acción claro para negocios locales.">
+  <title>AG V1. — Growth Studio</title>
+  <meta name="description" content="Diagnóstico de crecimiento y planes de acción para negocios locales.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0a0f1f">
-  <meta property="og:title" content="AG / V1 — Diagnóstico de crecimiento">
-  <meta property="og:description" content="Una mirada concreta a lo que hoy hace más difícil elegir tu negocio.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav-wrap">
-      <a class="brand brand-lockup" href="#inicio" aria-label="AG V1 inicio"><span class="brand-word">ag/v1.</span><span class="brand-sub">GROWTH AGENCY</span></a>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <a class="brand brand-lockup" href="#inicio" aria-label="AG V1 inicio">
+        <span class="brand-word">AG V1.</span>
+        <span class="brand-sub">GROWTH AGENCY</span>
+      </a>
+      <div class="header-tools">
+        <div class="language-switch" aria-label="Language selector">
+          <button class="lang-button active" data-lang="es" aria-pressed="true">ES</button>
+          <button class="lang-button" data-lang="it" aria-pressed="false">IT</button>
+          <button class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
       <nav id="mainNav" class="nav">
-        <a href="#metodo">Método</a>
-        <a href="#entregable">Qué recibes</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#metodo" data-i18n="navMethod">Método</a>
+        <a href="#entregable" data-i18n="navDeliverable">Qué recibes</a>
+        <a href="#contacto" data-i18n="navContact">Contacto</a>
       </nav>
     </div>
   </header>
@@ -31,30 +37,78 @@
     <section class="hero" id="inicio">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Growth studio · Sevilla / España</p>
-          <h1>Tu negocio ya genera interés.<br><em>Hagamos que sea más fácil elegirte.</em></h1>
-          <p class="lead">Analizamos cómo te descubren, qué frena la decisión y qué cambio concreto puede acercarte a más solicitudes, reservas o ventas.</p>
+          <p class="eyebrow" data-i18n="eyebrow">Growth studio · Sevilla / España</p>
+          <h1><span data-i18n="heroA">Tu negocio ya genera interés.</span><br><em data-i18n="heroB">Hagamos que sea más fácil elegirte.</em></h1>
+          <p class="lead" data-i18n="heroLead">Analizamos cómo te descubren, qué frena la decisión y qué cambio concreto puede acercarte a más solicitudes, reservas o ventas.</p>
           <div class="actions">
-            <a class="button button-primary" href="#metodo">Ver el método</a>
-            <a class="button button-quiet" href="#contacto">Hablar de tu negocio ↗</a>
+            <a class="button button-primary" href="#metodo" data-i18n="heroCtaOne">Ver el método</a>
+            <a class="button button-quiet" href="#contacto" data-i18n="heroCtaTwo">Hablar de tu negocio ↗</a>
           </div>
-          <p class="microcopy">Sin informes genéricos. Una lectura construida sobre tu actividad.</p>
+          <p class="microcopy" data-i18n="microcopy">Sin informes genéricos. Una lectura construida sobre tu actividad.</p>
         </div>
-        <div class="hero-art" aria-label="Diagnóstico de crecimiento: observación, fricción y plan de 30 días">
-          <div class="art-label">DIAGNÓSTICO PERSONALIZADO</div>
-          <div class="signal signal-one">01 <span>Señal</span></div>
-          <div class="signal signal-two">02 <span>Fricción</span></div>
-          <div class="signal signal-three">03 <span>Acción</span></div>
-          <div class="art-footer">WEB · SOCIAL · RECORRIDO DE DECISIÓN</div>
+        <div class="hero-art" aria-label="Growth diagnosis">
+          <div class="art-label" data-i18n="artLabel">DIAGNÓSTICO PERSONALIZADO</div>
+          <div class="signal signal-one">01 <span data-i18n="artOne">Señal</span></div>
+          <div class="signal signal-two">02 <span data-i18n="artTwo">Fricción</span></div>
+          <div class="signal signal-three">03 <span data-i18n="artThree">Acción</span></div>
+          <div class="art-footer" data-i18n="artFooter">WEB · SOCIAL · RECORRIDO DE DECISIÓN</div>
         </div>
       </div>
     </section>
-    <section class="section statement"><div class="wrap"><p class="section-kicker">No partimos de una lista de servicios</p><h2>Partimos de una pregunta:<br>¿dónde se está perdiendo una buena intención?</h2></div></section>
-    <section class="section method" id="metodo"><div class="wrap"><div class="section-intro"><p class="eyebrow">Cómo trabajamos</p><h2>Convertimos observaciones en una propuesta que se puede entender de un vistazo.</h2></div><div class="method-grid"><article><span>01</span><h3>Observamos</h3><p>Web, redes, propuesta, reseñas y recorrido de contacto. Solo usamos señales verificables.</p></article><article><span>02</span><h3>Priorizamos</h3><p>Elegimos un único punto de fricción que sea relevante, claro y posible de trabajar.</p></article><article><span>03</span><h3>Diseñamos</h3><p>Planteamos una intervención de 30 días con acciones, un mockup y métricas de lectura.</p></article></div></div></section>
-    <section class="section deliverable" id="entregable"><div class="wrap deliverable-layout"><div><p class="eyebrow">La propuesta</p><h2>Un documento que habla de tu negocio, no de nosotros.</h2><p>En lugar de enviarte una presentación comercial genérica, te mostramos qué hemos detectado y cómo plantearíamos la mejora.</p></div><ol class="deliverable-list"><li><strong>Síntoma</strong><span>Lo que vemos en el recorrido actual.</span></li><li><strong>Diagnóstico</strong><span>Por qué puede estar frenando una decisión.</span></li><li><strong>Cura</strong><span>Qué construiríamos o ajustaríamos en 30 días.</span></li><li><strong>Lectura</strong><span>Qué señales revisaríamos al terminar.</span></li></ol></div></section>
-    <section class="section fit"><div class="wrap fit-grid"><h2>Para negocios locales que ya tienen algo valioso que ofrecer.</h2><div><p>Restauración, hospitality, comercio, servicios y marcas con una propuesta real, pero un recorrido digital que todavía puede explicar mejor por qué elegirlas.</p><p>No vendemos fórmulas universales. Buscamos el siguiente cambio útil.</p></div></div></section>
-    <section class="closing" id="contacto"><div class="wrap closing-inner"><p class="eyebrow">Empezamos por una conversación</p><h2>Si tu negocio merece una mirada más concreta, hablemos.</h2><p>Cuéntame qué vendes, dónde notas el bloqueo y qué te gustaría que ocurriera después.</p><a class="button button-light" href="https://linkedin.com/in/dariorauccio" target="_blank" rel="noopener">Escribirme por LinkedIn ↗</a></div></section>
+
+    <section class="section statement">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="statementKicker">No partimos de una lista de servicios</p>
+        <h2 data-i18n="statementTitle">Partimos de una pregunta: ¿dónde se está perdiendo una buena intención?</h2>
+      </div>
+    </section>
+
+    <section class="section method" id="metodo">
+      <div class="wrap">
+        <div class="section-intro">
+          <p class="eyebrow" data-i18n="methodEyebrow">Cómo trabajamos</p>
+          <h2 data-i18n="methodTitle">Convertimos observaciones en una propuesta que se puede entender de un vistazo.</h2>
+        </div>
+        <div class="method-grid">
+          <article><span>01</span><h3 data-i18n="stepOneTitle">Observamos</h3><p data-i18n="stepOneText">Web, redes, propuesta, reseñas y recorrido de contacto. Solo usamos señales verificables.</p></article>
+          <article><span>02</span><h3 data-i18n="stepTwoTitle">Priorizamos</h3><p data-i18n="stepTwoText">Elegimos un único punto de fricción que sea relevante, claro y posible de trabajar.</p></article>
+          <article><span>03</span><h3 data-i18n="stepThreeTitle">Diseñamos</h3><p data-i18n="stepThreeText">Planteamos una intervención de 30 días con acciones, un mockup y métricas de lectura.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section deliverable" id="entregable">
+      <div class="wrap deliverable-layout">
+        <div>
+          <p class="eyebrow" data-i18n="deliverableEyebrow">La propuesta</p>
+          <h2 data-i18n="deliverableTitle">Un documento que habla de tu negocio, no de nosotros.</h2>
+          <p data-i18n="deliverableText">En lugar de enviarte una presentación comercial genérica, te mostramos qué hemos detectado y cómo plantearíamos la mejora.</p>
+        </div>
+        <ol class="deliverable-list">
+          <li><strong data-i18n="dOneTitle">Síntoma</strong><span data-i18n="dOneText">Lo que vemos en el recorrido actual.</span></li>
+          <li><strong data-i18n="dTwoTitle">Diagnóstico</strong><span data-i18n="dTwoText">Por qué puede estar frenando una decisión.</span></li>
+          <li><strong data-i18n="dThreeTitle">Cura</strong><span data-i18n="dThreeText">Qué construiríamos o ajustaríamos en 30 días.</span></li>
+          <li><strong data-i18n="dFourTitle">Lectura</strong><span data-i18n="dFourText">Qué señales revisaríamos al terminar.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section fit">
+      <div class="wrap fit-grid">
+        <h2 data-i18n="fitTitle">Para negocios locales que ya tienen algo valioso que ofrecer.</h2>
+        <div><p data-i18n="fitOne">Restauración, hospitality, comercio, servicios y marcas con una propuesta real, pero un recorrido digital que todavía puede explicar mejor por qué elegirlas.</p><p data-i18n="fitTwo">No vendemos fórmulas universales. Buscamos el siguiente cambio útil.</p></div>
+      </div>
+    </section>
+
+    <section class="closing" id="contacto">
+      <div class="wrap closing-inner">
+        <p class="eyebrow" data-i18n="closingEyebrow">Empezamos por una conversación</p>
+        <h2 data-i18n="closingTitle">Si tu negocio merece una mirada más concreta, hablemos.</h2>
+        <p data-i18n="closingText">Cuéntame qué vendes, dónde notas el bloqueo y qué te gustaría que ocurriera después.</p>
+        <a class="button button-light" href="https://linkedin.com/in/dariorauccio" target="_blank" rel="noopener" data-i18n="closingCta">Escribirme por LinkedIn ↗</a>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="wrap footer-row"><p>© <span id="year"></span> AG / V1 · Dario Rauccio</p><div><a href="privacidad.html">Privacidad</a><a href="aviso-legal.html">Aviso legal</a><a href="cookies.html">Cookies</a></div></div></footer>
+  <footer class="footer"><div class="wrap footer-row"><p>© <span id="year"></span> AG V1. · Dario Rauccio</p><div><a href="privacidad.html" data-i18n="privacy">Privacidad</a><a href="aviso-legal.html" data-i18n="legal">Aviso legal</a><a href="cookies.html" data-i18n="cookies">Cookies</a></div></div></footer>
 </body>
 </html>
