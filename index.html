@@ -113,6 +113,24 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="wrap footer-row"><p>© <span id="year"></span> AG V1. · Dario Rauccio</p><div><a href="privacidad.html" data-i18n="privacy">Privacidad</a><a href="aviso-legal.html" data-i18n="legal">Aviso legal</a><a href="cookies.html" data-i18n="cookies">Cookies</a></div></div></footer>
+  <div class="contact-modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+    <div class="contact-modal__backdrop" data-close-contact></div>
+    <section class="contact-modal__panel">
+      <button class="contact-modal__close" type="button" aria-label="Close" data-close-contact>×</button>
+      <p class="contact-modal__eyebrow" data-i18n="formEyebrow">Hablemos de tu negocio</p>
+      <h2 id="contactTitle" data-i18n="formTitle">Cuéntanos qué te gustaría mejorar.</h2>
+      <p class="contact-modal__intro" data-i18n="formIntro">Déjanos tus datos y prepararemos el siguiente paso contigo.</p>
+      <form class="contact-form" id="contactForm">
+        <label><span data-i18n="formName">Nombre y apellidos</span><input name="name" autocomplete="name" required></label>
+        <label><span data-i18n="formEmail">Email de trabajo</span><input name="email" type="email" autocomplete="email" required></label>
+        <label><span data-i18n="formBusiness">Empresa o actividad</span><input name="business" autocomplete="organization" required></label>
+        <label><span data-i18n="formMessage">¿Qué te gustaría mejorar?</span><textarea name="message" rows="3"></textarea></label>
+        <label class="contact-form__consent"><input name="privacy" type="checkbox" required><span data-i18n="formConsent">He leído la política de privacidad y autorizo el tratamiento de mis datos para responder a mi solicitud.</span></label>
+        <button class="button button-primary contact-form__submit" type="submit" data-i18n="formSubmit">Solicitar información</button>
+        <p class="contact-form__status" id="contactStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+  <footer class="footer"><div class="wrap footer-row"><p>© <span id="year"></span> FINALMENTE. · Dario Rauccio</p><div><a href="privacidad.html" data-i18n="privacy">Privacidad</a><a href="aviso-legal.html" data-i18n="legal">Aviso legal</a><a href="cookies.html" data-i18n="cookies">Cookies</a></div></div></footer>
 </body>
 </html>
